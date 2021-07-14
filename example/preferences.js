@@ -16,6 +16,7 @@ const preferences = new ElectronPreferences({
 		about: {
 			firstName: 'Pieter-Jan',
 			lastName: 'Van Robays',
+			tired: true
 		},
 		// ...
 	},
