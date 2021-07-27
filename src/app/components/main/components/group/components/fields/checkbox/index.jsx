@@ -17,7 +17,6 @@ class CheckboxField extends React.Component {
 
 			// If only a single checkbox is being rendered, this allows you the ability to pass
 			// a boolean default value instead of ['value'], for convenience.
-			console.log('>>>',value)
 			if (typeof value === 'boolean' && this.options.length === 1) {
 
 				value = value ? [ option.value ] : [];
@@ -84,11 +83,6 @@ class CheckboxField extends React.Component {
 	onChange(e) {
 
 		let { value } = this;
-		const idx = e.target.id.split('_')[2];
-		const option = this.options[idx];
-
-
-
 		const idx = e.target.id.split('_')[2];
 		const option = this.options[idx];
 
