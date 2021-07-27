@@ -84,6 +84,8 @@ class CheckboxField extends React.Component {
 	onChange(e) {
 
 		let { value } = this;
+		const idx = e.target.id.split('_')[2];
+		const option = this.options[idx];
 
 
 
